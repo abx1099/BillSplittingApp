@@ -1,0 +1,113 @@
+html,body{ height:100%; }
+body{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+#page-1, #page-2, #page-results {
+  display: none;
+}
+
+footer.page-footer {
+  padding: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.page-footer p {
+  margin: 5px 0;
+}
+
+.main-container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 25px 35px;
+    margin: 100px auto;
+    max-width: 900px;
+}
+
+.main-container h1 {
+    font-size: 48px;
+}
+
+.main-container h2 {
+    font-size: 26px;
+}
+
+.group-container {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 0px;
+}
+
+.check-button {
+    margin: 4px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    border: none;
+    overflow: hidden;
+}
+
+.check-button:hover {
+    background-color: #4db6ac;
+}
+
+.check-button label {
+    width:4.0em;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.check-button label span {
+    text-align:center;
+    padding: 0.5rem 1rem;
+    display:block;
+}
+
+.check-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+.check-button input:checked + span {
+    background-color:#26a69a;
+    color:#fff;
+}
+
+#namelist .namelist-item {
+    padding: 0;
+    margin: 10px;
+    min-width: 200px;
+    display: inline-block;
+}
+
+#namelist .namelist-item .input-field {
+    margin-top: 0;
+}
+
+#namelist .namelist-item input[type=number] {
+    max-width: 100px;
+    margin: 0;
+    text-align:right;
+}
+
+.toast-error {
+    background-color: rgba(232,44,12,.8);
+    top: auto !important;
+    right: auto !important;
+    bottom: 10% !important;
+    left:7% !important;
+}
+
+.buttonrow {
+  margin-top: 30px;
+}
+
+table#transactions td:nth-of-type(3) { text-align: right; }
